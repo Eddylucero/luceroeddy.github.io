@@ -5,20 +5,17 @@
     font-family: "Poppins", sans-serif;
 }
 
-
 body {
     background: radial-gradient(circle at top, #0d0f23, #0a0c1a);
     color: #e6e8f5;
     line-height: 1.6;
 }
 
-
 .container {
     width: 90%;
     max-width: 1100px;
     margin: auto;
 }
-
 
 header {
     padding: 40px 0;
@@ -40,12 +37,12 @@ header {
 }
 
 .profile-img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid #5865f2;
+    border: 5px solid #5865f2;
     transition: 0.3s;
 }
 
@@ -53,7 +50,6 @@ header {
     border-color: #9aa0ff;
     transform: rotate(3deg);
 }
-
 
 h1 {
     font-size: 26px;
@@ -76,7 +72,6 @@ h1 {
     color: #9aa0ff;
     margin-right: 8px;
 }
-
 
 .links {
     margin-top: 20px;
@@ -114,7 +109,6 @@ h2 {
     align-items: center;
     gap: 10px;
 }
-
 
 .project-grid {
     display: grid;
@@ -161,7 +155,6 @@ h2 {
 .project-card:hover::after {
     left: 100%;
 }
-
 
 .education ul {
     list-style: none;
