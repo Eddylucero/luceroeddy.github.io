@@ -22,9 +22,10 @@
     <header>
         <div class="container">
             <div class="profile-card">
+
                 <img src="assets/me.jpg" alt="Foto Eddy" class="profile-img">
 
-                <h1>Eddy Alvaro Lucero Tipan</h1>
+                <h1 class="name-title">Eddy Alvaro Lucero Tipan</h1>
 
                 <p class="subtitle">
                     <i class="fa-solid fa-graduation-cap"></i>
@@ -36,21 +37,24 @@
                     Pujilí, Ecuador
                 </p>
 
-                <div class="contact">
+                <div class="contact-box">
                     <p><i class="fa-solid fa-envelope"></i> eddy.lucero1553@utc.edu.ec</p>
                     <p><i class="fa-solid fa-envelope"></i> luceroeddy8@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i> 0984932349</p>
                 </div>
 
-                <div class="links">
-                    <a href="https://github.com/Eddylucero" target="_blank">
-                        <i class="fa-brands fa-github"></i> GitHub
+                <div class="social-cards">
+                    <a class="social-card" href="https://github.com/Eddylucero" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/eddy-lucero-20924b3a0/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    <a class="social-card" href="https://www.linkedin.com/in/eddy-lucero-20924b3a0/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
                     </a>
                 </div>
+
             </div>
         </div>
     </header>
@@ -60,21 +64,16 @@
 
         <p>
             Soy un estudiante de Ingeniería de Sistemas de Información con enfoque en desarrollo de software.
-            He trabajado en proyectos utilizando
+            He trabajado con
             <i class="fa-brands fa-python"></i> Python,
             <i class="fa-brands fa-laravel"></i> Laravel,
             <i class="fa-brands fa-django"></i> Django,
             <i class="fa-brands fa-react"></i> React,
-            <i class="fa-solid fa-code"></i> C#,
+            C#,
             <i class="fa-brands fa-flutter"></i> Flutter y
             <i class="fa-solid fa-flask"></i> Flask.
-            Exploro desde sistemas web empresariales hasta aplicaciones móviles.
-            A veces me interesa el desarrollo full stack, los datos y la construcción de sistemas que resuelvan
-            problemas reales.
         </p>
     </section>
-
-    <br>
 
     <section class="projects container">
         <h2><i class="fa-solid fa-diagram-project"></i> Proyectos Destacados</h2>
@@ -93,26 +92,26 @@
 
             <a class="project-card" href="https://github.com/Eddylucero/Model" target="_blank">
                 <h3><i class="fa-solid fa-chart-line"></i> Modelo Ciencia de Datos (Python)</h3>
-                <p>Modelo inicial para análisis predictivo.</p>
+                <p>Modelo predictivo inicial.</p>
             </a>
 
             <a class="project-card" href="https://github.com/Eddylucero/university_25_26" target="_blank">
                 <h3><i class="fa-solid fa-building-columns"></i> Universidades (C#)</h3>
-                <p>Sistema para gestión universitaria.</p>
+                <p>Sistema universitario básico.</p>
             </a>
 
             <a class="project-card" href="https://github.com/Eddylucero/Control_temperatura" target="_blank">
                 <h3><i class="fa-solid fa-seedling"></i> Invernadero Claveles (Flask)</h3>
-                <p>Control de temperatura/humedad con IoT.</p>
+                <p>IoT temperatura y humedad.</p>
             </a>
 
             <a class="project-card" href="https://github.com/Eddylucero/Mirella" target="_blank">
                 <h3><i class="fa-solid fa-cake-candles"></i> Mirella (Django)</h3>
-                <p>Sistema temático.</p>
+                <p>Sistema temático de cumpleaños.</p>
             </a>
 
             <a class="project-card" href="https://github.com/Eddylucero/PalabrasInv.git" target="_blank">
-                <h3><i class="fa-solid fa-pen-nib"></i> Palabras Inventadas (Django)</h3>
+                <h3><i class="fa-solid fa-pen-nib"></i> Palabras Inventadas</h3>
                 <p>Registro de palabras creadas.</p>
             </a>
 
@@ -123,7 +122,7 @@
 
             <a class="project-card" href="https://github.com/Eddylucero/LigaPro" target="_blank">
                 <h3><i class="fa-solid fa-futbol"></i> Liga Pro (Django)</h3>
-                <p>Gestión de ligas deportivas.</p>
+                <p>Gestión deportiva.</p>
             </a>
 
             <a class="project-card" href="https://github.com/Eddylucero/Netflix" target="_blank">
@@ -134,32 +133,63 @@
         </div>
     </section>
 
-    <br>
-
     <section class="education container">
         <h2><i class="fa-solid fa-school"></i> Educación</h2>
 
         <ul>
-            <li>ESCUELA “MARCELO SARSOSA SALAS” – Primaria</li>
-            <li>UNIDAD EDUCATIVA “PROVINCIA DE COTOPAXI” – Secundaria</li>
-            <li>UNIVERSIDAD TÉCNICA DE COTOPAXI – Ingeniería de Sistemas de Información (Cursando)</li>
+            <li>Escuela Marcelo Sarsosa Salas</li>
+            <li>Unidad Educativa Provincia de Cotopaxi</li>
+            <li>Universidad Técnica de Cotopaxi (Cursando)</li>
         </ul>
     </section>
 
-    <br>
 
-    <section class="skills container">
-        <h2><i class="fa-solid fa-code"></i> Habilidades</h2>
+    <section class="skills-section container">
+        <h2><i class="fa-solid fa-bolt"></i> Habilidades</h2>
 
-        <h3><i class="fa-solid fa-database"></i> Bases de datos</h3>
-        <p>Mysql, Postgres, SQL Server 2022, Sqlite, Sqflite</p>
+        <h3><i class="fa-solid fa-database"></i> Bases de Datos</h3>
+        <div class="skills-grid">
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">PostgreSQL</div>
+            <div class="skill-card">SQL Server 2022</div>
+            <div class="skill-card">SQLite</div>
+            <div class="skill-card">Sqflite</div>
+        </div>
 
         <h3><i class="fa-solid fa-laptop-code"></i> Lenguajes y Frameworks</h3>
-        <p>Laravel, Django, C#, Flutter, Flask, Python, HTML, CSS, React</p>
+        <div class="skills-grid">
+            <div class="skill-card">Laravel</div>
+            <div class="skill-card">Django</div>
+            <div class="skill-card">C#</div>
+            <div class="skill-card">Flutter</div>
+            <div class="skill-card">Flask</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">React</div>
+        </div>
+    </section>
 
-        <h3><i class="fa-solid fa-language"></i> Idiomas</h3>
-        <p> - Español (Nativo)</p>
-        <p> - Inglés (Intermedio)</p>
+    <section class="skills container">
+        <h2><i class="fa-solid fa-language"></i> Idiomas</h2>
+
+        <div class="languages-box">
+
+            <div class="language-item">
+                <div class="language-name">Español</div>
+                <div class="language-bar">
+                    <div class="language-progress" style="width: 100%"></div>
+                </div>
+            </div>
+
+            <div class="language-item">
+                <div class="language-name">Inglés</div>
+                <div class="language-bar">
+                    <div class="language-progress" style="width: 50%"></div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <footer>
@@ -171,9 +201,7 @@
                     <a href="https://www.linkedin.com/in/eddy-lucero-20924b3a0/" target="_blank"><i
                             class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <p class="copyright">© 2025 Eddy Lucero. Todos los derechos reservados.
-                    <i class="fa-solid fa-heart"></i> Creado con pasión y código
-                </p>
+                <p class="copyright">© 2025 Eddy Lucero. Creado con pasión y código</p>
             </div>
         </div>
     </footer>
