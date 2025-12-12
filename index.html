@@ -4,143 +4,649 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eddy Lucero | Portafolio</title>
+    <title>Eddy Lucero | Portafolio Profesional</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- AOS Library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <div class="profile-card">
-                <img src="assets/me.jpg" alt="Foto Eddy" class="profile-img">
-                <h1>Eddy Alvaro Lucero Tipan</h1>
-                <p class="subtitle"><i class="fa-solid fa-graduation-cap"></i> Estudiante de Ingeniería de Sistemas de
-                    Información</p>
-                <p class="location"><i class="fa-solid fa-location-dot"></i> Pujilí, Ecuador</p>
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Eddy Lucero</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <button class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-                <div class="contact">
-                    <p><i class="fa-solid fa-envelope"></i> eddy.lucero1553@utc.edu.ec</p>
-                    <p><i class="fa-solid fa-envelope"></i> luceroeddy8@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 0984932349</p>
+    <!-- HEADER -->
+    <header id="inicio">
+        <div class="container">
+            <div class="header-content" data-aos="fade-up">
+                <div class="profile-intro">
+                    <div class="profile-img-container">
+                        <img src="assets/me.jpg" alt="Foto Eddy" class="profile-img">
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h1>Eddy Alvaro Lucero Tipan</h1>
+                        <div class="title-badge">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Estudiante de Ingeniería de Sistemas de Información</span>
+                        </div>
+                        <p class="tagline">Desarrollador Full Stack & Entusiasta de la Innovación Tecnológica</p>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Pujilí, Ecuador</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="links">
-                    <a href="https://github.com/Eddylucero" target="_blank"><i class="fa-brands fa-github"></i>
-                        GitHub</a>
-                    <a href="https://www.linkedin.com/in/eddy-lucero-20924b3a0/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <p class="contact-label">Email Académico</p>
+                            <p>eddy.lucero1553@utc.edu.ec</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <p class="contact-label">Email Personal</p>
+                            <p>luceroeddy8@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <p class="contact-label">Teléfono</p>
+                            <p>0984932349</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/Eddylucero" target="_blank" class="social-btn github">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/eddy-lucero-20924b3a0/" target="_blank"
+                        class="social-btn linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-btn download-cv">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Descargar CV</span>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- SOBRE MÍ -->
-    <section class="about container">
-        <h2><i class="fa-solid fa-user"></i> Sobre mí</h2>
-        <p>
-            Soy un estudiante de Ingeniería de Sistemas de Información con enfoque en desarrollo de software.
-            He trabajado en proyectos utilizando <i class="fa-brands fa-python"></i> Python, <i
-                class="fa-brands fa-laravel"></i> Laravel,
-            <i class="fa-brands fa-django"></i> Django, <i class="fa-brands fa-react"></i> React, <i
-                class="fa-solid fa-code"></i> C#,
-            <i class="fa-brands fa-flutter"></i> Flutter y <i class="fa-solid fa-flask"></i> Flask.
-            Exploro desde sistemas web empresariales hasta aplicaciones móviles e IoT.
-            Me interesa el desarrollo full stack, los datos y la construcción de herramientas que resuelvan problemas
-            reales.
-        </p>
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2><i class="fa-solid fa-user"></i> Sobre mí</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="about-text">
+                    <p>
+                        Soy un estudiante apasionado de <strong>Ingeniería de Sistemas de Información</strong> con
+                        enfoque en desarrollo de software y soluciones tecnológicas innovadoras.
+                    </p>
+                    <p>
+                        Mi experiencia abarca múltiples tecnologías, desde el desarrollo backend con
+                        <strong>Python</strong>, <strong>Django</strong> y <strong>Laravel</strong> hasta el desarrollo
+                        frontend con <strong>React</strong> y aplicaciones móviles con <strong>Flutter</strong>. También
+                        he trabajado con <strong>C#</strong> para aplicaciones de escritorio y <strong>Flask</strong>
+                        para proyectos IoT.
+                    </p>
+                    <p>
+                        Me interesa el <strong>desarrollo full stack</strong>, la <strong>ciencia de datos</strong> y la
+                        construcción de herramientas que resuelvan problemas reales. Disfruto explorando nuevas
+                        tecnologías y aplicando mis conocimientos en proyectos prácticos.
+                    </p>
+                </div>
+                <div class="tech-icons">
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-laravel"></i>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-django"></i>
+                        <span>Django</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-solid fa-code"></i>
+                        <span>C#</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-flutter"></i>
+                        <span>Flutter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- PROYECTOS -->
-    <section class="projects container">
-        <h2><i class="fa-solid fa-diagram-project"></i> Proyectos Destacados</h2>
-        <div class="project-grid">
-            <a class="project-card" href="https://github.com/Eddylucero/Deportistas.git" target="_blank">
-                <h3><i class="fa-solid fa-running"></i> Deportistas (Laravel)</h3>
-                <p>Sistema para gestionar deportistas.</p>
-            </a>
-            <a class="project-card" href="https://github.com/Eddylucero/Adopciones.git" target="_blank">
-                <h3><i class="fa-solid fa-paw"></i> Adopciones (Laravel)</h3>
-                <p>Sistema para adopciones con roles de usuario.</p>
-            </a>
-            <a class="project-card" href="https://github.com/Eddylucero/Model" target="_blank">
-                <h3><i class="fa-solid fa-chart-line"></i> Modelo Ciencia de Datos (Python)</h3>
-                <p>Modelo inicial para análisis predictivo.</p>
-            </a>
-            <a class="project-card" href="https://github.com/Eddylucero/university_25_26" target="_blank">
-                <h3><i class="fa-solid fa-building-columns"></i> Universidades (C#)</h3>
-                <p>Sistema para gestión universitaria.</p>
-            </a>
-            <a class="project-card" href="https://github.com/Eddylucero/Control_temperatura" target="_blank">
-                <h3><i class="fa-solid fa-seedling"></i> Invernadero Claveles (Flask)</h3>
-                <p>Control de temperatura/humedad con IoT.</p>
-            </a>
-            <a class="project-card" href="https://github.com/Eddylucero/Mirella" target="_blank">
-                <h3><i class="fa-solid fa-cake-candles"></i> Mirella (Django)</h3>
-                <p>Sistema temático para celebración.</p>
-            </a>
-            <a class="project-card" href="https://github.com/Eddylucero/PalabrasInv.git" target="_blank">
-                <h3><i class="fa-solid fa-pen-nib"></i> Palabras Inventadas (Django)</h3>
-                <p>Registro y gestión de palabras creadas.</p>
-            </a>
-            <a class="project-card" href="https://github.com/Eddylucero/Carbongest" target="_blank">
-                <h3><i class="fa-solid fa-fire"></i> CarbonGest (Django)</h3>
-                <p>Sistema de ventas de carbón.</p>
-            </a>
-            <a class="project-card" href="https://github.com/Eddylucero/LigaPro" target="_blank">
-                <h3><i class="fa-solid fa-futbol"></i> Liga Pro (Django)</h3>
-                <p>Gestión de ligas deportivas.</p>
-            </a>
-            <a class="project-card" href="https://github.com/Eddylucero/Netflix" target="_blank">
-                <h3><i class="fa-solid fa-film"></i> Clon Netflix (Django)</h3>
-                <p>Inicio de sesión estilo Netflix.</p>
-            </a>
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2><i class="fa-solid fa-diagram-project"></i> Proyectos Destacados</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Explora mis trabajos más relevantes organizados por tecnología</p>
+            </div>
+
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="50">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="laravel">Laravel</button>
+                <button class="filter-btn" data-filter="django">Django</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="csharp">C#</button>
+                <button class="filter-btn" data-filter="flask">Flask</button>
+            </div>
+
+            <div class="project-grid">
+                <!-- Laravel Projects -->
+                <a class="project-card laravel" href="https://github.com/Eddylucero/Deportistas.git" target="_blank"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-running"></i>
+                    </div>
+                    <h3>Deportistas</h3>
+                    <p>Sistema para gestión de deportistas con roles de usuario y administración completa.</p>
+                    <div class="project-tags">
+                        <span class="tag">Laravel</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </a>
+
+                <a class="project-card laravel" href="https://github.com/Eddylucero/Adopciones.git" target="_blank"
+                    data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <h3>Adopciones</h3>
+                    <p>Sistema para adopciones con roles de usuario, gestión de mascotas y seguimiento de procesos.</p>
+                    <div class="project-tags">
+                        <span class="tag">Laravel</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </a>
+
+                <!-- Django Projects -->
+                <a class="project-card django" href="https://github.com/Eddylucero/Mirella" target="_blank"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <h3>Mirella</h3>
+                    <p>Sistema temático para celebración con Django, incluyendo gestión de eventos y usuarios.</p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </a>
+
+                <a class="project-card django" href="https://github.com/Eddylucero/PalabrasInv.git" target="_blank"
+                    data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3>Palabras Inventadas</h3>
+                    <p>Registro y gestión de palabras creadas con sistema de votación y categorización.</p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQLite</span>
+                    </div>
+                </a>
+
+                <a class="project-card django" href="https://github.com/Eddylucero/Carbongest" target="_blank"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h3>CarbonGest</h3>
+                    <p>Sistema de ventas de carbón con control de inventario, clientes y facturación.</p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </a>
+
+                <a class="project-card django" href="https://github.com/Eddylucero/LigaPro" target="_blank"
+                    data-aos="fade-up" data-aos-delay="350">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-futbol"></i>
+                    </div>
+                    <h3>Liga Pro</h3>
+                    <p>Gestión de ligas deportivas con estadísticas, calendarios y sistema de puntuación.</p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </a>
+
+                <a class="project-card django" href="https://github.com/Eddylucero/Netflix" target="_blank"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+                    <h3>Clon Netflix</h3>
+                    <p>Inicio de sesión y interfaz estilo Netflix con Django y autenticación personalizada.</p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQLite</span>
+                    </div>
+                </a>
+
+                <!-- Python Projects -->
+                <a class="project-card python" href="https://github.com/Eddylucero/Model" target="_blank"
+                    data-aos="fade-up" data-aos-delay="450">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Modelo Ciencia de Datos</h3>
+                    <p>Modelo inicial para análisis predictivo con Python, scikit-learn y visualización de datos.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">Pandas</span>
+                    </div>
+                </a>
+
+                <!-- C# Projects -->
+                <a class="project-card csharp" href="https://github.com/Eddylucero/university_25_26" target="_blank"
+                    data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3>Universidades</h3>
+                    <p>Sistema para gestión universitaria con C#, incluyendo estudiantes, profesores y cursos.</p>
+                    <div class="project-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET</span>
+                        <span class="tag">SQL Server</span>
+                    </div>
+                </a>
+
+                <!-- Flask Projects -->
+                <a class="project-card flask" href="https://github.com/Eddylucero/Control_temperatura" target="_blank"
+                    data-aos="fade-up" data-aos-delay="550">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3>Invernadero Claveles</h3>
+                    <p>Control de temperatura/humedad con IoT usando Flask, sensores y dashboard en tiempo real.</p>
+                    <div class="project-tags">
+                        <span class="tag">Flask</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">IoT</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2><i class="fa-solid fa-code"></i> Habilidades Técnicas</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fa-solid fa-database"></i> Bases de Datos</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL Server</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQLite / Sqflite</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="150">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Lenguajes y Frameworks</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Python / Django / Flask</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PHP / Laravel</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C# / .NET</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Flutter / Dart</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>HTML / CSS / JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fa-solid fa-language"></i> Idiomas</h3>
+                    <div class="language-list">
+                        <div class="language-item">
+                            <span>Español</span>
+                            <div class="language-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-text">Nativo</span>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span>Inglés</span>
+                            <div class="language-level">
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot active"></span>
+                                <span class="level-dot"></span>
+                                <span class="level-dot"></span>
+                                <span class="level-text">Intermedio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- EDUCACIÓN -->
-    <section class="education container">
-        <h2><i class="fa-solid fa-school"></i> Educación</h2>
-        <ul>
-            <li>ESCUELA “MARCELO SARSOSA SALAS” – Primaria</li>
-            <li>UNIDAD EDUCATIVA “PROVINCIA DE COTOPAXI” – Secundaria</li>
-            <li>UNIVERSIDAD TÉCNICA DE COTOPAXI – Ingeniería de Sistemas de Información (Cursando)</li>
-        </ul>
+    <section class="education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2><i class="fa-solid fa-graduation-cap"></i> Formación Académica</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="education-timeline" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-item">
+                    <div class="timeline-date">2011 - 2017</div>
+                    <div class="timeline-content">
+                        <h3>Escuela "Marcelo Sarsosa Salas"</h3>
+                        <p>Educación Primaria</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2017 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>Unidad Educativa "Provincia de Cotopaxi"</h3>
+                        <p>Educación Secundaria</p>
+                    </div>
+                </div>
+                <div class="timeline-item current">
+                    <div class="timeline-date">2023 - Presente</div>
+                    <div class="timeline-content">
+                        <h3>Universidad Técnica de Cotopaxi</h3>
+                        <p>Ingeniería de Sistemas de Información</p>
+                        <p class="status"><i class="fa-solid fa-spinner fa-spin"></i> Cursando actualmente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- HABILIDADES -->
-    <section class="skills container">
-        <h2><i class="fa-solid fa-code"></i> Habilidades</h2>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2><i class="fa-solid fa-envelope"></i> Contacto</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">¿Interesado en trabajar juntos? ¡Contáctame!</p>
+            </div>
 
-        <h3><i class="fa-solid fa-database"></i> Bases de datos</h3>
-        <p><i class="fa-solid fa-database"></i> Mysql, Postgres, SQL Server 2022, Sqlite, Sqflite</p>
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>eddy.lucero1553@utc.edu.ec</p>
+                        <p>luceroeddy8@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Teléfono</h3>
+                        <p>+593 984 932 349</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Ubicación</h3>
+                        <p>Pujilí, Cotopaxi, Ecuador</p>
+                    </div>
+                </div>
 
-        <h3><i class="fa-solid fa-laptop-code"></i> Lenguajes y Frameworks</h3>
-        <p>
-            <i class="fa-brands fa-laravel"></i> Laravel,
-            <i class="fa-brands fa-django"></i> Django,
-            <i class="fa-solid fa-code"></i> C#,
-            <i class="fa-brands fa-flutter"></i> Flutter,
-            <i class="fa-solid fa-flask"></i> Flask,
-            <i class="fa-brands fa-python"></i> Python,
-            <i class="fa-brands fa-html5"></i> HTML,
-            <i class="fa-brands fa-css3-alt"></i> CSS,
-            <i class="fa-brands fa-react"></i> React
-        </p>
-
-        <h3><i class="fa-solid fa-language"></i> Idiomas</h3>
-        <p>Español (Nativo), Inglés (Intermedio)</p>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2025 Eddy Lucero | <i class="fa-solid fa-heart"></i> Creado con pasión</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Eddy Lucero</span>
+                </div>
+                <p class="footer-quote">"Transformando ideas en soluciones digitales innovadoras"</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Eddylucero" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/eddy-lucero-20924b3a0/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="copyright">© 2025 Eddy Lucero. Todos los derechos reservados. <i
+                        class="fa-solid fa-heart"></i> Creado con pasión y código</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Project filtering
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                // Add active class to clicked button
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+                const projects = document.querySelectorAll('.project-card');
+
+                projects.forEach(project => {
+                    if (filter === 'all' || project.classList.contains(filter)) {
+                        project.style.display = 'block';
+                        setTimeout(() => {
+                            project.style.opacity = '1';
+                            project.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        project.style.opacity = '0';
+                        project.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            project.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Te contactaré pronto.');
+            this.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
